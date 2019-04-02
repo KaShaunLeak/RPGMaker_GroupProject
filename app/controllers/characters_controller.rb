@@ -1,4 +1,2 @@
-class CharactersController < ActionController::Base
-    def index
-    end
+class CharactersController < ApplicationController
 end
