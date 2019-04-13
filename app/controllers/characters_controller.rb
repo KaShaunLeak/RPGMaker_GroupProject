@@ -39,8 +39,13 @@ class CharactersController < ApplicationController
         redirect_to character_path
     end
 
+<<<<<<< HEAD
     private 
     def characters_params
+=======
+     
+    def character_params
+>>>>>>> 7a2c480b06c8704a4b83a9afccfe7df2d384482d
         params.require(:character).permit(:title, :text)
     end
 end
