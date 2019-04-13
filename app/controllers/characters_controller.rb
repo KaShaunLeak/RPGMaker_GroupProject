@@ -30,20 +30,12 @@ class CharactersController < ApplicationController
         @character = Character.find(params[:id])
         @character.destroy
         
-        redirect_to character_path
+        redirect_to characters_path
     end
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-    private 
-    def characters_params
-=======
-     
-=======
+
 private
->>>>>>> f7c27211d47615aa0000368d32e3994944e4dc46
     def character_params
->>>>>>> 7a2c480b06c8704a4b83a9afccfe7df2d384482d
         params.require(:character).permit(:title, :text)
     end
 end
