@@ -1,1 +1,25 @@
+<<<<<<< HEAD
 <h1 id="c">New Character</h1>
+=======
+<h1>New Character</h1>
+<%= link_to 'New Character', new_character_path, :class => "newCharacter"%>
+<table>
+        <tr>
+            <th>Title</th>
+            <th>Text</th>
+        </tr>
+        
+        <% @characters.each do |character| %>
+        <tr>
+            <td><%= link_to character.title, character_path(character)%></td>
+            <td><%= link_to character.text, character_path(character)%></td>
+            <td><%= link_to 'Edit', edit_character_path(character)%></td>
+            <td><%= link_to 'Destroy',
+                                        character_path(character),
+                                        method: :delete,
+                                        data: { confirm: 'Are you sure?' } %></td>
+                                        
+        </tr>
+        <% end %>
+</table>
+>>>>>>> 1e52c7ef4b6a5d24a955261a14326075f8024f0e

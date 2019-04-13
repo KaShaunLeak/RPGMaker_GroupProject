@@ -3,45 +3,44 @@ class CharactersController < ApplicationController
         @characters = Character.all
     end
     def show
-        @characters = Characters.find(params[:id])
+        @character = Character.find(params[:id])
     end
     def new
-        @characters = Characters.new
+        @character = Character.new
     end
     def create
-        @characters = Characters.new(article_params)
+        @character = Character.new(character_params)
         byebug
         
-        if @characters.save
+        if @character.save
             byebug
-            redirect_to @characters
+            redirect_to @character
         else
             render 'new'
         end
     end
     
     def edit
-        @characters = Characters.find(params[:id])
+        @character = Character.find(params[:id])
     end
 
     def update
-        @characters = Characters.find(params[:id])
-        if @characters.update(article_params)
-            redirect_to @characters
+        @character = Character.find(params[:id])
+        if @character.update(character_params)
+            redirect_to @character
         else
             render 'edit'
         end
     end
     def destroy
-        @characters = Characters.find(params[:id])
-        @characters.destroy
+        @character = Character.find(params[:id])
+        @character.destroy
         
-        redirect_to articles_path
+        redirect_to character_path
     end
 
-private 
-    def character_params
-        params.require(:characters).permit(:title, :text)
+    private 
+    def characters_params
+        params.require(:character).permit(:title, :text)
     end
 end
-
