@@ -7,30 +7,5 @@
   <strong>Text:</strong>
   <%= @character.text %>
 </p>
-<h2>Comments</h2>
-<% @character.comments.each do |comment| %>
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
- 
-  <p>
-    <strong></strong>
-    <%= comment.body %>
-  </p>
-<% end %>
-<h2>Add a comment:</h2>
-<%= form_for([@character, @character.comments.build]) do |f| %>
-  <p>
-    <%= f.label :commenter %><br>
-    <%= f.text_field :commenter %>
-  </p>
-  <p>
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
-<%= link_to 'Character List', articles_path %>
+
+<%= link_to 'Character List', characters_path %>

@@ -10,14 +10,8 @@ class CharactersController < ApplicationController
     end
     def create
         @character = Character.new(character_params)
-        byebug
-        
-        if @character.save
-            byebug
-            redirect_to @character
-        else
-            render 'new'
-        end
+        @character.save
+        redirect_to @character
     end
     
     def edit
@@ -39,7 +33,7 @@ class CharactersController < ApplicationController
         redirect_to character_path
     end
 
-     
+private
     def character_params
         params.require(:character).permit(:title, :text)
     end
