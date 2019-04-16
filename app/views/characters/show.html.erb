@@ -1,12 +1,25 @@
+<%= link_to 'Character List', characters_path, class: 'weblink' %> 
 <p>
-  <strong>Title:</strong>
-  <%= @character.title %>
+  <strong>Name:</strong>
+  <%= @character.name %>
 </p>
  
 <p>
-  <strong>Text:</strong>
-  <%= @character.text %>
+  <strong>Sex:</strong>
+  <%= @character.sex %>
 </p>
 
-<%= link_to 'Character List', characters_path %> 
+<p>
+  <strong>Age:</strong>
+  <%= @character.age %>
+</p>
 
+<p>
+  <strong>Race:</strong>
+  <%= @character.race %>
+</p>
+
+<p>
+  <strong>Job:</strong>
+  <%= @character.job %>
+</p>

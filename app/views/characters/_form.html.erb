@@ -15,14 +15,29 @@
   <% end %>
  
   <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
   </p>
  
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
+    <p>
+      <%= f.label :sex %><br>
+      <%= f.text_field :sex %>
+    </p>
+  
+    <p>
+      <%= f.label :age%>
+      <%= f.text_field :age%>
+    </p>
+ 
+    <p>
+      <%= f.label :race%>
+      <%= f.text_field :race%>
+    </P>
+    
+    <p>
+      <%= f.label :job %>
+      <%= f.text_field :job %>
+    </P>
  
   <p>
     <%= f.submit %>
