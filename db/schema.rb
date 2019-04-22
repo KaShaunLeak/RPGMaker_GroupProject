@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_16_173148) do
+ActiveRecord::Schema.define(version: 2019_04_22_173744) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(version: 2019_04_16_173148) do
     t.string "age"
     t.string "race"
     t.string "job"
+    t.string "birthday"
+    t.string "magic"
+    t.string "birth"
+    t.string "country"
+    t.string "personality"
+    t.string "backstory"
+    t.string "strong"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

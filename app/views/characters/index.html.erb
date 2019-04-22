@@ -1,9 +1,9 @@
-<h1>New Character</h1>
-<%= link_to 'New Character', new_character_path, :class => "newCharacter", class: 'weblink'%>
+<h1>List Character</h1>
+<%= link_to 'Create Character', new_character_path, :class => "newCharacter", class: 'weblink'%>
 <table>
         <tr>
-            <th>Title</th>
-            <th>Text</th>
+            <th>Name</th>
+            <th>Jobs</th>
         </tr>
         
         <% @characters.each do |character| %>

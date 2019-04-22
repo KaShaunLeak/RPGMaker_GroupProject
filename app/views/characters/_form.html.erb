@@ -9,15 +9,16 @@
       <ul>
         <% @character.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
-        <% end %>
+        <% end %>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        .0
       </ul>
     </div>
   <% end %>
  
-  <p>
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </p>
+    <p>
+      <%= f.label :name %><br>
+      <%= f.text_field :name %>
+    </p>
  
     <p>
       <%= f.label :sex %><br>
@@ -25,20 +26,48 @@
     </p>
   
     <p>
-      <%= f.label :age%>
+      <%= f.label :age%><br>
       <%= f.text_field :age%>
     </p>
  
     <p>
-      <%= f.label :race%>
+      <%= f.label :race%><br>
       <%= f.text_field :race%>
     </P>
     
     <p>
-      <%= f.label :job %>
+      <%= f.label :job %><br>
       <%= f.text_field :job %>
     </P>
+    
+    <p>
+      <%= f.label :birthday%><br>
+      <%= f.text_field :birthday%>
+    </p>
  
+    <p>
+      <%= f.label :magic%><br>
+      <%= f.text_field :magic%>
+    </P>
+    
+    <p>
+      <%= f.label :birth %><br>
+      <%= f.text_field :birth %>
+    </P>
+    
+    <p>
+      <%= f.label :country%><br>
+      <%= f.text_field :country%>
+    </p>
+    
+    <p>
+      <%= f.label :personality%><br>
+      <%= f.text_area :personality%>
+    </p>
+    <p>
+      <%= f.label :backstory%><br>
+      <%= f.text_area :backstory%>
+    </p>
   <p>
     <%= f.submit %>
   </p>
