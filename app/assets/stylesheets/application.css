@@ -1,3 +1,5 @@
+
+
 h1 {margin: 0}
 
 h2 {
@@ -70,18 +72,4 @@ body {
 
 .weblink:hover {
     color: gray;
-}
-
-input[type=text] {
-    width: 25%;
-    padding: 7px 7px;
-    border: 2px solid #ccc;
-}
-
-textarea {
-    width: 50%;
-    height: 100px;
-    padding: 12px 12px;
-    border: 2px solid #ccc;
-    resize: none;
 }
