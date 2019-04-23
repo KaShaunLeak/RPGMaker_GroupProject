@@ -10,8 +10,11 @@ class CharactersController < ApplicationController
     end
     def create
         @character = Character.new(character_params)
-        @character.save
-        redirect_to @character
+        if @character.save
+            redirect_to @character
+        else
+            render 'new'
+        end
     end
     
     def edit
@@ -36,6 +39,6 @@ class CharactersController < ApplicationController
 
 private
     def character_params
-        params.require(:character).permit(:name, :sex, :age, :race, :job)
+        params.require(:character).permit(:name, :sex, :age, :race, :job, :birthday, :magic, :birth, :country, :personality, :backstory)
     end
 end

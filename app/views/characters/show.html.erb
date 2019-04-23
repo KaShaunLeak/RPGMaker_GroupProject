@@ -1,25 +1,55 @@
 <%= link_to 'Character List', characters_path, class: 'weblink' %> 
 <p>
-  <strong>Name:</strong>
+  <strong>Name:</strong><br>
   <%= @character.name %>
 </p>
  
 <p>
-  <strong>Sex:</strong>
+  <strong>Sex:</strong><br>
   <%= @character.sex %>
 </p>
 
 <p>
-  <strong>Age:</strong>
+  <strong>Age:</strong><br>
   <%= @character.age %>
 </p>
 
 <p>
-  <strong>Race:</strong>
+  <strong>Race:</strong><br>
   <%= @character.race %>
 </p>
 
 <p>
-  <strong>Job:</strong>
+  <strong>Job:</strong><br>
   <%= @character.job %>
+</p>
+
+<p>
+  <strong>Birthday:</strong><br>
+  <%= @character.birthday %>
+</p>
+
+<p>
+  <strong>Magical Affinity:</strong><br>
+  <%= @character.magic %>
+</p>
+
+<p>
+  <strong>Birth Country:</strong><br>
+  <%= @character.birth %>
+</p>
+
+<p>
+  <strong>Country Alliance:</strong><br>
+  <%= @character.country %>
+</p>
+
+<p>
+  <strong>Personality:</strong><br>
+  <%= @character.personality %>
+</p>
+
+<p>
+  <strong>Backstory:</strong><br>
+  <%= @character.backstory %>
 </p>
