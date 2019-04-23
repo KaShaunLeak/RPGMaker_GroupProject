@@ -1,5 +1,8 @@
-<h1>List Character</h1>
-<%= link_to 'Create Character', new_character_path, :class => "newCharacter", class: 'weblink'%>
+<center>
+<h1>Characters List</h1>
+<%= link_to 'Create Character', new_character_path, :class => "newCharacter", class: 'weblink button'%>
+<br>
+<br>
 <table>
         <tr>
             <th>Name</th>
@@ -14,8 +17,9 @@
             <td><%= link_to character.age, character_path(character), class: 'weblink'%></td>
             <td><%= link_to character.sex, character_path(character), class: 'weblink'%></td>
             <td><%= link_to character.job, character_path(character), class: 'weblink'%></td>
-            <td><%= link_to 'Edit', edit_character_path(character), class: 'weblink'%></td>
-            <td><%= link_to 'Destroy', character_path(character), method: :delete, data: { confirm: 'Are you sure?' }, class: 'weblink' %></td>
+            <td class="action"><%= link_to 'Edit', edit_character_path(character), class: 'weblink'%></td>
+            <td class="action"><%= link_to 'Destroy', character_path(character), method: :delete, data: { confirm: 'Are you sure?' }, class: 'weblink' %></td>
         </tr>
         <% end %>
 </table>
+</center>

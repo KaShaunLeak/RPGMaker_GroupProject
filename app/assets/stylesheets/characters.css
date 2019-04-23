@@ -1,6 +1,35 @@
-// Place all the styles related to the characters controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+    background-color: rgb(40,40,40);
+    color: white;
+    
+    margin: auto;
+    width: 50%;
+}
+
+.sidenav a:hover{
+    color: white;
+}
+
+.weblink  {
+    text-decoration: none;
+    color: white;
+}
+
+.weblink:hover {
+    color: gray;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+}
 
 input[type=text] {
     width: 25%;
@@ -14,4 +43,26 @@ textarea {
     padding: 12px 12px;
     border: 2px solid #ccc;
     resize: none;
+}
+
+
+table, td, th{
+  
+}
+
+th {
+    font-size: 2em;
+    font-weight: bold;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 1em;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+td.action {
+    border: none;
 }
