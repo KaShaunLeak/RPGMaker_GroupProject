@@ -18,7 +18,7 @@
             <td><%= link_to character.sex, character_path(character), class: 'weblink'%></td>
             <td><%= link_to character.job, character_path(character), class: 'weblink'%></td>
             <td class="action"><%= link_to 'Edit', edit_character_path(character), class: 'weblink'%></td>
-            <td class="action"><%= link_to 'Destroy', character_path(character), method: :delete, data: { confirm: 'Are you sure?' }, class: 'weblink' %></td>
+            <td class="action"><%= link_to 'Destroy', character_path(character),  method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
         <% end %>
 </table>
