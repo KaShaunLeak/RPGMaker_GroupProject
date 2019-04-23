@@ -1,75 +1,89 @@
-
-
-h1 {margin: 0}
-
-h2 {
-    font-size: 2em;
-    font-weight: bold;
-    margin: 0;
-    text-align: center;
-    color: rgb(220,220,220);
-}
-
-.body {
-    padding-right: 360px;
-    padding-left: 360px;
-}
-
 body {
-    background-color: rgb(0,40,40);
-    margin: 3;
-    color: rgb(240,240,240);
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    font-size: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+header {
+	text-align: center;
+    padding-left: 20px;
 }
 
-.header {
-    height: 150px;
-    width: 100%;
-    text-align: center;
-    background-position: center;
-    background-size: 600px;
+main {
+    background-image: url("https://webpages.uncc.edu/dual/rpgnavimage.jpg");
+    opacity: 0.5;
     background-repeat: no-repeat;
-    background-color: #111;
-    color: gray;
-    font-size: 30px;
-    outline-style: solid;
-    outline-color: white;
-    outline-width: 3px;
-    display:block; 
+    background-size: 1500px 700px;
 }
 
+h1 { 
+    font-size: 200%;
+    margin-bottom: .5em;
+	font-weight: bold;
+}
+h2 {
+	float: left;
+	padding-left: 300px;
+	font-size: 200%;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: .2em;
+    color: black;
+}
+
+hr {
+    size: 20px;
+}
+
+p {
+    padding-left: 300px;
+    color: black;
+}
+
+/* side nav bar formatting */
 .sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed; /*locks position to match scrolling*/
-    top: 5px; /*position of sidebar from top*/
-    left: 0; /*position of sidebar from left*/
-    background-color: #111;
-    overflow-x: hidden; /*disable horizontal scroll*/
-    clear:both;
-    border-right: 3px solid white;
-    border-top: 3px solid white;
-    outline-color: white;
-    outline-width: 3px;
-    
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 78px;
+  left: 0px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+    padding-bottom: 406px;
 }
 
-.sidenav a{
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
 }
 
-.sidenav a:hover{
-    color: white;
+.sidenav a:hover {
+  color: darkgray;
+}
+/* end of side nav bar formatting */
+
+/* main pic formatting */
+.pic {
+    width: 20%;
+    padding-left: 540px;
 }
 
-.weblink  {
-    text-decoration: none;
-    color: white;
-}
+/* end of main pic formatting */
 
-.weblink:hover {
-    color: gray;
+/* formatting for the footer */
+.footer {
+   position: fixed;
+   padding-left: 600px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: black;
+    border-top-style: groove;
+    padding-top: 20px;
 }
+/* end of footer formatting */
