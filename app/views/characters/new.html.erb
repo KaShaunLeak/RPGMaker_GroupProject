@@ -1,6 +1,22 @@
-<h1>New Character</h1>
+<header>
+	<!-- Title  -->
+    <h1>DeviantCharacter</h1>
+</header>
 
-<%= link_to '< Character List', characters_path, class: 'weblink' %> 
+<section>
+	<!-- Side Naviation Bar -->
+    <div class="sidenav">
+        <a> <%= link_to 'Home', controller: 'application' %></a>
+        <a> <%= link_to 'Characters', controller: 'characters' %></a>
+    </div>		
+</section>
 
-
-<%= render 'form' %>
+<main>
+        <center><h2>Character Creation</h2></center>
+        <%= render 'form' %>
+</main>
+<footer>
+    <p class="footer">
+        Updated 25 April 2019
+    </p>
+</footer>

@@ -17,6 +17,7 @@ main {
     background-image: url("https://webpages.uncc.edu/dual/rpgnavimage.jpg");
     background-repeat: no-repeat;
     background-size: 1500px 700px;
+    height: 700px;
 }
 
 h1 { 
@@ -131,7 +132,6 @@ textarea {
     resize: none;
 }
 
-
 table {
     margin: auto;
     padding-left: 100px;
@@ -152,4 +152,25 @@ td {
 
 td.action {
     border: none;
+}
+
+
+
+.left {
+    float: left;
+    padding-left: 300px;
+    width: 20%;
+}
+
+.right {
+    float: left;
+    width: 20%;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 20%;
 }
