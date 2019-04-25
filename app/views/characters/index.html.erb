@@ -1,6 +1,29 @@
+<<<<<<< HEAD
 <h1>New Character</h1>
 <%= link_to 'New Character', new_character_path, :class => "newCharacter", class: 'weblink'%>
 <table>
+=======
+    <header>
+		<!-- Title  -->
+        <h1>DeviantCharacter</h1>
+	</header>
+<section>
+	<!-- Side Naviation Bar -->
+    <div class="sidenav">
+        <a> <%= link_to 'Home', controller: 'application' %></a>
+        <a> <%= link_to 'Characters', controller: 'characters' %></a>
+    </div>		
+</section>
+
+<main>
+    <section class="body">
+    <center>
+    <h2>Characters List</h2>
+    <br><br><%= link_to 'Create Character', new_character_path, :class => "newCharacter", class: 'weblink button'%>
+    <br>
+    <br></center>
+    <table>
+>>>>>>> 889fbba928d6ba48b3ac8d6dd518646e893247c4
         <tr>
             <th>Title</th>
             <th>Text</th>
@@ -10,8 +33,27 @@
         <tr>
             <td><%= link_to character.name, character_path(character), class: 'weblink'%></td>
             <td><%= link_to character.job, character_path(character), class: 'weblink'%></td>
+<<<<<<< HEAD
             <td><%= link_to 'Edit', edit_character_path(character), class: 'weblink'%></td>
             <td><%= link_to 'Destroy', character_path(character), method: :delete, data: { confirm: 'Are you sure?' }, class: 'weblink' %></td>
         </tr>
         <% end %>
 </table>
+=======
+            <td class="action"><%= link_to 'Edit', edit_character_path(character), class: 'weblink'%></td>
+            <td class="action"><%= link_to 'Destroy', character_path(character),  method: :delete, data: { confirm: 'Are you sure?' }, class: 'weblink' %></td>
+        </tr>
+        <% end %>
+    </table>
+    </section>
+</main>
+
+</body>
+
+    
+<footer>
+        <p class="footer">
+            Updated 25 April 2019
+        </p>
+</footer>
+>>>>>>> 889fbba928d6ba48b3ac8d6dd518646e893247c4

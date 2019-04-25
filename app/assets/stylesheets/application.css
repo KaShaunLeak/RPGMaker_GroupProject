@@ -3,17 +3,21 @@ body {
     font-size: 100%;
     background-color: white;
     margin: 0 auto;
+    overflow: hidden;
 }
 header {
-	text-align: center;
     padding-left: 20px;
+    padding-left: 23%;
+    background-color: white;
+    color: black;
+    text-shadow: 1px gray;
 }
 
 main {
     background-image: url("https://webpages.uncc.edu/dual/rpgnavimage.jpg");
-    opacity: 0.5;
     background-repeat: no-repeat;
     background-size: 1500px 700px;
+    height: 700px;
 }
 
 h1 { 
@@ -22,8 +26,6 @@ h1 {
 	font-weight: bold;
 }
 h2 {
-	float: left;
-	padding-left: 300px;
 	font-size: 200%;
 	font-weight: bold;
 	margin-top: 0;
@@ -36,8 +38,10 @@ hr {
 }
 
 p {
-    padding-left: 300px;
+    margin: auto;
     color: black;
+    width: 75%;
+    outline-color: 1px whie;
 }
 
 /* side nav bar formatting */
@@ -64,6 +68,11 @@ p {
 .sidenav a:hover {
   color: darkgray;
 }
+
+.weblink {
+    text-decoration: none;
+    color: black;
+}
 /* end of side nav bar formatting */
 
 /* main pic formatting */
@@ -87,3 +96,81 @@ p {
     padding-top: 20px;
 }
 /* end of footer formatting */
+
+
+
+
+/*Character CSS Styles*/
+section.body {
+    padding-left: 100px;
+    width: 50%;
+    padding-right: auto;
+    height: 1500px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 7px 7px;
+    border: 2px solid #ccc;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    resize: none;
+}
+
+table {
+    margin: auto;
+    padding-left: 100px;
+}
+
+th {
+    font-size: 2em;
+    font-weight: bold;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 1em;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td.action {
+    border: none;
+}
+
+
+
+.left {
+    float: left;
+    padding-left: 300px;
+    width: 20%;
+}
+
+.right {
+    float: left;
+    width: 20%;
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 20%;
+}

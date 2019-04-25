@@ -1,56 +1,54 @@
-<%= link_to 'Character List', characters_path, class: 'weblink' %> 
-<p>
+<%= link_to 'Character List', characters_path, class: 'weblink button' %> 
+
+
+<header>
+	<!-- Title  -->
+    <h1>DeviantCharacter</h1>
+</header>
+
+<section>
+	<!-- Side Naviation Bar -->
+    <div class="sidenav">
+        <a> <%= link_to 'Home', controller: 'application' %></a>
+        <a> <%= link_to 'Characters', controller: 'characters' %></a>
+    </div>		
+</section>
+
+<main>
+  <p>
   <strong>Name:</strong><br>
-  <%= @character.name %>
-</p>
- 
-<p>
+  <%= @character.name %><br>
+
   <strong>Sex:</strong><br>
-  <%= @character.sex %>
-</p>
+  <%= @character.sex %><br>
 
-<p>
   <strong>Age:</strong><br>
-  <%= @character.age %>
-</p>
+  <%= @character.age %><br>
 
-<p>
   <strong>Race:</strong><br>
-  <%= @character.race %>
-</p>
+  <%= @character.race %><br>
 
-<p>
   <strong>Job:</strong><br>
-  <%= @character.job %>
-</p>
+  <%= @character.job %><br>
 
-<p>
   <strong>Birthday:</strong><br>
-  <%= @character.birthday %>
-</p>
+  <%= @character.birthday %><br>
 
-<p>
   <strong>Magical Affinity:</strong><br>
-  <%= @character.magic %>
-</p>
+  <%= @character.magic %><br>
 
-<p>
+
   <strong>Birth Country:</strong><br>
-  <%= @character.birth %>
-</p>
+  <%= @character.birth %><br>
 
-<p>
   <strong>Country Alliance:</strong><br>
-  <%= @character.country %>
-</p>
+  <%= @character.country %><br>
 
-<p>
   <strong>Personality:</strong><br>
-  <%= @character.personality %>
-</p>
+  <%= @character.personality %><br>
 
-<p>
   <strong>Backstory:</strong><br>
+<<<<<<< HEAD
   <%= @character.backstory %>
 </p>
 
@@ -80,3 +78,13 @@
     <%= f.submit %>
   </p>
 <% end %>
+=======
+  <%= @character.backstory %><br>
+</p>
+</main>
+<footer>
+    <p class="footer">
+        Updated 25 April 2019
+    </p>
+</footer>
+>>>>>>> 889fbba928d6ba48b3ac8d6dd518646e893247c4
