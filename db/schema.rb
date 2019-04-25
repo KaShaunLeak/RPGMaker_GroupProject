@@ -30,8 +30,11 @@ ActiveRecord::Schema.define(version: 2019_04_23_195945) do
   end
 
   create_table "comments", force: :cascade do |t|
+    t.string "commenter"
+    t.integer "character_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["character_id"], name: "index_comments_on_character_id"
   end
 
   create_table "users", force: :cascade do |t|

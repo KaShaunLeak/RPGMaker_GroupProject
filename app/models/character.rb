@@ -1,4 +1,5 @@
 class Character < ApplicationRecord
+    has_many :comments
     validates :name, presence: true, length: {minimum: 5}
     validates :sex, presence: true, length: {maximum: 1}
     validates :age, presence: true, length: {maximum: 4}
