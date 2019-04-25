@@ -14,11 +14,9 @@
     <section class="body">
     <center>
     <h2>Characters List</h2>
-    <%= link_to 'Create Character', new_character_path, :class => "newCharacter", class: 'weblink button'%>
+    <br><br><%= link_to 'Create Character', new_character_path, :class => "newCharacter", class: 'weblink button'%>
     <br>
-    <br>
-
-    
+    <br></center>
     <table>
         <tr>
             <th>Name</th>
@@ -37,7 +35,7 @@
             <td class="action"><%= link_to 'Destroy', character_path(character),  method: :delete, data: { confirm: 'Are you sure?' }, class: 'weblink' %></td>
         </tr>
         <% end %>
-    </table></center>
+    </table>
     </section>
 </main>
 
@@ -45,5 +43,5 @@
 
     
 <footer>
-        <p class="footer">Updated: April 23, 2019</p>
+        <p class="footer"><a href="/footer.txt"></a></p>
 </footer>
