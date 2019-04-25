@@ -7,6 +7,8 @@ body {
 header {
 	text-align: center;
     padding-left: 20px;
+    background-color: white;
+    color: black;
 }
 
 main {
@@ -64,6 +66,11 @@ p {
 .sidenav a:hover {
   color: darkgray;
 }
+
+.weblink {
+    text-decoration: none;
+    color: black;
+}
 /* end of side nav bar formatting */
 
 /* main pic formatting */
@@ -87,3 +94,61 @@ p {
     padding-top: 20px;
 }
 /* end of footer formatting */
+
+
+
+
+/*Character CSS Styles*/
+section.body {
+    padding-left: 100px;
+    width: 50%;
+    padding-right: auto;
+    height: 1500px;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+input[type=text] {
+    width: 25%;
+    padding: 7px 7px;
+    border: 2px solid #ccc;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    padding: 12px 12px;
+    border: 2px solid #ccc;
+    resize: none;
+}
+
+
+table, td, th{
+  
+}
+
+th {
+    font-size: 2em;
+    font-weight: bold;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 1em;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+td.action {
+    border: none;
+}
