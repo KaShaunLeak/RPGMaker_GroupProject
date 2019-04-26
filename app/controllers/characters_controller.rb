@@ -32,13 +32,10 @@ class CharactersController < ApplicationController
     end
     
     def destroy
-<<<<<<< HEAD
-=======
-       
->>>>>>> 889fbba928d6ba48b3ac8d6dd518646e893247c4
+
         @character = Character.find(params[:id])
         @character.destroy
-        redirect_to character_path
+        redirect_to characters_path
         
     end
 

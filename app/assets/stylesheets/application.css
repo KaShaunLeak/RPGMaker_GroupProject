@@ -16,10 +16,14 @@ header {
 main {
     background-image: url("https://webpages.uncc.edu/dual/rpgnavimage.jpg");
     background-repeat: no-repeat;
-    background-size: 1500px 700px;
-    height: 700px;
+    background-image: center;
+    background-image: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
 }
-
 h1 { 
     font-size: 200%;
     margin-bottom: .5em;
@@ -54,7 +58,7 @@ p {
   background: #eee;
   overflow-x: hidden;
   padding: 8px 0;
-    padding-bottom: 406px;
+  padding-bottom: 406px;
 }
 
 .sidenav a {
@@ -135,6 +139,7 @@ textarea {
 table {
     margin: auto;
     padding-left: 100px;
+    
 }
 
 th {
