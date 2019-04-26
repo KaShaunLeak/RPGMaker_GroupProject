@@ -51,7 +51,8 @@ p {
 /* side nav bar formatting */
 .sidenav {
   width: 200px;
-  position: fixed;
+  position: relative;
+  float:left;
   z-index: 1;
   top: 78px;
   left: 0px;

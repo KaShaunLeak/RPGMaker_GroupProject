@@ -1,8 +1,6 @@
 
 <h1>New Character</h1>
 <%= link_to 'New Character', new_character_path, :class => "newCharacter", class: 'weblink'%>
-<div class="entirepage">
-<table>
 
     <header>
 		<!-- Title  -->
@@ -18,26 +16,27 @@
 
 <main>
     <section class="body">
-    <center>
-    <h2>Characters List</h2>
-    <br><br><%= link_to 'Create Character', new_character_path, :class => "newCharacter", class: 'weblink button'%>
-    <br>
-    <br></center>
-    <table>
-
-        <tr>
-            <th>Title</th>
-            <th>Text</th>
-        </tr>
-        
-        <% @characters.each do |character| %>
-        <tr>
-            <td><%= link_to character.name, character_path(character), class: 'weblink'%></td>
-            <td><%= link_to character.job, character_path(character), class: 'weblink'%></td>
-            <td><%= link_to 'Show', character_path(character), class: 'weblink' %></td>
-            <td><%= link_to 'Edit', edit_character_path(character), class: 'weblink'%></td>
-            <td><%= link_to 'Destroy', character_path(character), method: :delete, data: { confirm: 'Are you sure?' }, class: 'weblink' %></td>
-        </tr>
-        <% end %>
-</table>
-</div>
+        <center>
+        <h2>Characters List</h2>
+        <br><br><%= link_to 'Create Character', new_character_path, :class => "newCharacter", class: 'weblink button'%>
+        <br>
+        <br></center>
+        <table>
+    
+            <tr>
+                <th>Title</th>
+                <th>Text</th>
+            </tr>
+            
+            <% @characters.each do |character| %>
+            <tr>
+                <td><%= link_to character.name, character_path(character), class: 'weblink'%></td>
+                <td><%= link_to character.job, character_path(character), class: 'weblink'%></td>
+                <td><%= link_to 'Show', character_path(character), class: 'weblink' %></td>
+                <td><%= link_to 'Edit', edit_character_path(character), class: 'weblink'%></td>
+                <td><%= link_to 'Destroy', character_path(character), method: :delete, data: { confirm: 'Are you sure?' }, class: 'weblink' %></td>
+            </tr>
+            <% end %>
+        </table>
+    </section>
+</main>
