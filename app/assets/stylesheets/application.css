@@ -53,9 +53,6 @@ p {
   width: 200px;
   position: relative;
   float:left;
-  z-index: 1;
-  top: 78px;
-  left: 0px;
   background: #eee;
   overflow-x: hidden;
   padding: 8px 0;
