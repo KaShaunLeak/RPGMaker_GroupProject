@@ -160,8 +160,9 @@ td.action {
 
 .left {
     float: left;
-    padding-left: 300px;
-    width: 20%;
+    padding-left: 20px;
+    width: 85%;
+    color: black;
 }
 
 .right {
