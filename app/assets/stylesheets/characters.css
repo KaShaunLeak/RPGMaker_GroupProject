@@ -19,6 +19,10 @@ body {
     color: gray;
 }
 
+.error_explanation {
+    text-align: center;
+}
+
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
