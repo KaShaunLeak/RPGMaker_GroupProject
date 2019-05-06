@@ -7,8 +7,6 @@ class Character < ApplicationRecord
     validates :race, presence: true, length: {minimum: 3, maximum: 12}
     validates :job, length: {maximum: 12}
     validates :birthday, length: {maximum: 15}
-    validates :magic, length: {maximum: 1}
-    validates :birth, length: {maximum: 20}
     validates :country, length: {maximum: 20}
     validates :personality, length: {maximum: 512}
     validates :backstory, length: {maximum: 2560}
