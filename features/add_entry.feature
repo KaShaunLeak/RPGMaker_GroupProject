@@ -8,15 +8,15 @@ Feature: Add a new character entry
     Given I am on the home page
     When I click on the "Characters" link
     Then I should be on the "Characters List" page
-    When I click on the "New Character" link
+    When I click on the "Create Character" link
     Then I should be on the "DeviantCharacter" page
     And I should see the "Name" field
     And I should see the "Sex" field
     And I should see the "Age" field
     And I should see the "Race" field
-    And I should see the "Job" field
+    
     And I should see the "Birthday" field
-    And I should see the "Magic" field
+
     And I should see the "Birth" field
     And I should see the "Country" field
     And I should see the "Personality" field
