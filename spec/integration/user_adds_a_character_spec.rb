@@ -15,6 +15,7 @@ feature"User adds a character" do
         fill_in "Sex", with: "M"
         fill_in "Age", with: "21"
         fill_in "Race", with: "Mixed"
+        fill_in "Job", with: "Chef"
         fill_in "Birthday", with: "10/12/1995"
         fill_in "Country", with: "Skyrim"
         fill_in "Personality", with: "Grumpy"
@@ -24,6 +25,7 @@ feature"User adds a character" do
         expect(page).to have_content("M")
         expect(page).to have_content("21")
         expect(page).to have_content("Mixed")
+        expect(page).to have_content("Chef")
         expect(page).to have_content("10/12/1995")
         expect(page).to have_content("Skyrim")
         expect(page).to have_content("Grumpy")
