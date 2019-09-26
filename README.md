@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Creators:
+    KaShaun Leak
+    Chris Malang
+    Matthew Phillips
+    Darlene Ual
 
-Things you may want to cover:
+**TO GET APPLICATION RUNNING**
+1.) Use the following commands (With Cloud 9)
+' git clone https://github.com/KaShaunLeak/RPGMaker_GroupProject '
+' cd rpgmaker/app '
+' rails server -b $IP -p $PORT '
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+2.) In the toolbar: Preview > Preview Running Application
+3.) If it does not load in the window, click on the two
+    squares with the arrow inside in the top right of the 
+    application window to open in a new browser tab
