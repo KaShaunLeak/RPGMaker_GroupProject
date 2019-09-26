@@ -12,6 +12,8 @@ Creators:
 
 ' git clone https://github.com/KaShaunLeak/RPGMaker_GroupProject '
 
+' bundle install '
+
 ' cd rpgmaker '
 
 ' db:migrate RAILS_ENV=development ' **Needed to fix an error that occurs on initial clone**
