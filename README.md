@@ -12,7 +12,11 @@ Creators:
 
 ' git clone https://github.com/KaShaunLeak/RPGMaker_GroupProject '
 
-' cd rpgmaker/app '
+' cd rpgmaker '
+
+' db:migrate RAILS_ENV=development ' **Needed to fix an error that occurs on initial clone**
+
+' cd app '
 
 ' rails server -b $IP -p $PORT '
 
